@@ -1,0 +1,135 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="MapElements">
+      <UniqueIdentifier>{32674fb8-de57-401b-ba1f-8d364d159f59}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="MapElements\MapEntities">
+      <UniqueIdentifier>{1e4b7b2c-e695-4f01-9b3d-cca8ba434d88}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="MapElements\Stone">
+      <UniqueIdentifier>{4c2cfa89-d6da-44c9-af1f-1a5f94e0cacb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="MapElements\Grass">
+      <UniqueIdentifier>{2febc640-f3c8-4e2a-951b-045e31e6aee9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Menu">
+      <UniqueIdentifier>{276f30e1-3160-4bda-aeff-d749e6860cfb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="MapElements\Player Class">
+      <UniqueIdentifier>{2612d088-1e1a-4c1d-9145-114a936b380a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="MapElements\Agent">
+      <UniqueIdentifier>{555ba9b3-f3c2-4062-bc39-baf721411a72}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="src\main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Game.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="CObject.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="CMoving_object.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="CGObject.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="CPlayer.cpp">
+      <Filter>MapElements\Player Class</Filter>
+    </ClCompile>
+    <ClCompile Include="CStone.cpp">
+      <Filter>MapElements\Stone</Filter>
+    </ClCompile>
+    <ClCompile Include="CGrass.cpp">
+      <Filter>MapElements\Grass</Filter>
+    </ClCompile>
+    <ClCompile Include="CGGrass.cpp">
+      <Filter>MapElements\Grass</Filter>
+    </ClCompile>
+    <ClCompile Include="CGPlayer.cpp">
+      <Filter>MapElements\Player Class</Filter>
+    </ClCompile>
+    <ClCompile Include="CMap.cpp">
+      <Filter>MapElements\MapEntities</Filter>
+    </ClCompile>
+    <ClCompile Include="CGStone.cpp">
+      <Filter>MapElements\Stone</Filter>
+    </ClCompile>
+    <ClCompile Include="CMainMenu.cpp">
+      <Filter>Menu</Filter>
+    </ClCompile>
+    <ClCompile Include="CButton.cpp">
+      <Filter>Menu</Filter>
+    </ClCompile>
+    <ClCompile Include="CAgent.cpp">
+      <Filter>MapElements\Agent</Filter>
+    </ClCompile>
+    <ClCompile Include="CGAgent.cpp">
+      <Filter>MapElements\Agent</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Game.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="CObject.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="CMoving_object.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="CGObject.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="CPlayer.h">
+      <Filter>MapElements\Player Class</Filter>
+    </ClInclude>
+    <ClInclude Include="CGPlayer.h">
+      <Filter>MapElements\Player Class</Filter>
+    </ClInclude>
+    <ClInclude Include="CStone.h">
+      <Filter>MapElements\Stone</Filter>
+    </ClInclude>
+    <ClInclude Include="CGrass.h">
+      <Filter>MapElements\Grass</Filter>
+    </ClInclude>
+    <ClInclude Include="CGGrass.h">
+      <Filter>MapElements\Grass</Filter>
+    </ClInclude>
+    <ClInclude Include="CMap.h">
+      <Filter>MapElements\MapEntities</Filter>
+    </ClInclude>
+    <ClInclude Include="CGStone.h">
+      <Filter>MapElements\Stone</Filter>
+    </ClInclude>
+    <ClInclude Include="CMainMenu.h">
+      <Filter>Menu</Filter>
+    </ClInclude>
+    <ClInclude Include="CButton.h">
+      <Filter>Menu</Filter>
+    </ClInclude>
+    <ClInclude Include="CAgent.h">
+      <Filter>MapElements\Agent</Filter>
+    </ClInclude>
+    <ClInclude Include="CGAgent.h">
+      <Filter>MapElements\Agent</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>
