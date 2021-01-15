@@ -48,6 +48,7 @@ CMainMenu::~CMainMenu()
 {
 	delete exitGameBTN;
 	delete startGameBTN;
+	delete optionsGameBTN;
 }
 
 

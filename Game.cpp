@@ -9,7 +9,6 @@
 void Game::initWindow()
 {
     std::ifstream ifs("Config/window.txt");
-
     std::string title = "none";
     window_bounds.width = 800;
     window_bounds.height = 600;
@@ -120,11 +119,13 @@ void Game::renderLoadingScreen()
 
 void Game::updateAgents()
 {
+    //update and move every agent
     for (int k = 0; k < agents_g.size(); k++)
     {
         this->agents_o[k]->move(this->window);
         this->agents_g[k]->update(this->agents_o[k]);
     }
+    //adds new agent
     if (this->time > this->addAgentTime)
     {
         for (int i = 0; i < 2; i++)
@@ -138,6 +139,7 @@ void Game::updateAgents()
 
         this->addAgentTime += 5;
     }
+    //changes direction of the agents
     if (this->time > this->changeDirTime)
     {
         for (int i = 0; i < this->agents_o.size(); i++)
@@ -155,16 +157,13 @@ void Game::checkAgentCollision()
     {
         if (this->agents_o[i]->checkIfInRange(this->player))
         {
-
-
+            Sleep(1000);
             this->window->clear();
-
             this->window->setView(this->window->getDefaultView());
-
             this->initScreenText(100, this->window_bounds.height / 2 - 100, "You survived " + std::to_string(this->time) + " seconds.", 100);
             this->renderScreenText(this->screenText);
             this->window->display();
-            Sleep(5000);
+            Sleep(4000);
             this->gameWindowState = MAIN_MENU;
         }
 
@@ -174,7 +173,7 @@ void Game::checkAgentCollision()
    // this->view.setCenter(sf::Vector2f(this->window_bounds.width / 2, this->window_bounds.height / 2));
     //this->window->getDefaultView();
     
-}
+ }
 
 void Game::updateSFMLEvents()
 {
@@ -200,38 +199,16 @@ void Game::updateMousePos()
 
 void Game::updatePlayerMove()
 {
-    if (sf::Keyboard::isKeyPressed(sf::Keyboard::Right)) {
-        this->player->position_x += this->player->speed;
-        if (this->player->position_x > window_bounds.width - this->player->size)
-        {
-            this->player->position_x = window_bounds.width - this->player->size;
-        }
-    }
-    else if (sf::Keyboard::isKeyPressed(sf::Keyboard::Left)) {
-        this->player->position_x -= this->player->speed;
-        if (this->player->position_x < this->player->size)
-        {
-            this->player->position_x = this->player->size;
-        }
-    }
-    if (sf::Keyboard::isKeyPressed(sf::Keyboard::Down)) {
-        this->player->position_y += this->player->speed;
-        if (this->player->position_y > window_bounds.height - this->player->size)
-        {
-            this->player->position_y = window_bounds.height - this->player->size;
-        }
-    }
-    else if (sf::Keyboard::isKeyPressed(sf::Keyboard::Up)) {
-        this->player->position_y -= this->player->speed;
-        if (this->player->position_y < this->player->size)
-        {
-            this->player->position_y = this->player->size;
-        }
-    }
+    this->m_object->move(this->window);
+
+      
+    
 }
 
 void Game::update()
 {
+    this->checkAgentCollision();
+
     this->updateSFMLEvents();
     
     this->updatePlayerMove();
@@ -239,11 +216,11 @@ void Game::update()
     this->timeUpdate();
 
     //agent update
-    updateAgents();
+    this->updateAgents();
     //-agent update
 
     //check agent collision
-    checkAgentCollision();
+    
     //-check agent collision
 
     //check map collisions
@@ -263,7 +240,7 @@ void Game::render()
         this->window->setView(view);
         this->window->getDefaultView();
         
-        this->view.setSize(sf::Vector2f(600.0f, 300.0f));
+        this->view.setSize(sf::Vector2f(900.0f, 450.0f));
         this->view.setCenter(this->player->position_x, this->player->position_y);
 
         this->map->render(this->window);
@@ -274,10 +251,11 @@ void Game::render()
         {
             this->agents_g[k]->render(this->window);
         }
-        //-agent render
-        
- 
+        //-agent render        
         this->window->display();
+
+        
+        
 }
 
 void Game::run()
@@ -372,6 +350,7 @@ void Game::run()
             this->player = &player1;
             CGPlayer gPlayer(this->player);
             this->gplayer = &gPlayer;
+            this->m_object = &player1;
             //-create player
 
             //create agents
@@ -414,10 +393,12 @@ void Game::run()
                         delete this->agents_g[i];
                         delete this->agents_o[i];
 
-                    }
-                    
+                    } 
                     agents_g.clear();
                     agents_o.clear();
+
+                    
+
                     break;
                 }
                 //game over

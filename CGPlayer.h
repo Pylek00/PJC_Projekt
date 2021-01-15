@@ -10,6 +10,9 @@ public:
 	CircleShape shape;
 
 	CGPlayer(CPlayer* object);
+	~CGPlayer();
+
+
 
 	void update_render(CPlayer* object, sf::RenderTarget *target);
 

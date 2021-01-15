@@ -10,7 +10,7 @@ class CAgent :
 {
 public:
 
-    int seeRange;
+    
     directions dir;
     int moveDir;
     sf::Vector2u vector;
@@ -22,12 +22,17 @@ public:
     bool checkIfInRange(CPlayer* player);
     void setDir();
     
+    void setSpeed(int speed);
+    int getSpeed();
+    void setSize(int size);
+    int getSize();
+    void setSeeRange(int seeRange);
+    int getSeeRange();
+    void setPos(sf::RenderTarget* target);
+    sf::Vector2i getPos();
 
 private:
-    void setSpeed(int speed);
-    void setSize(int size);
-    void setSeeRange(int seeRange);
-    void setPos(sf::RenderTarget* target);
+    int seeRange;
     
 protected:
 

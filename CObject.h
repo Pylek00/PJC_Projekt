@@ -12,13 +12,17 @@ using namespace sf;
 
 class CObject
 {
+protected:
+	float size;
 public:
+
 	float position_x;
 	float position_y;
-	float size;
 
 
 
+	float getSize();
+	void  setSize(int s);
 
 
 	CObject();

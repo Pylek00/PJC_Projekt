@@ -8,6 +8,11 @@ void CAgent::setSpeed(int speed)
 		this->speed = 10;
 }
 
+int CAgent::getSpeed()
+{
+	return speed;
+}
+
 void CAgent::setSize(int size)
 {
 	if (size > 5)
@@ -16,12 +21,22 @@ void CAgent::setSize(int size)
 		this->size = 10;
 }
 
+int CAgent::getSize()
+{
+	return this->size;
+}
+
 void CAgent::setSeeRange(int seeRange)
 {
 	if (size < 5)
 		this->seeRange = size*10;
 	else
 		this->seeRange = seeRange;
+}
+
+int CAgent::getSeeRange()
+{
+	return seeRange;
 }
 
 void CAgent::setPos(sf::RenderTarget* target)
@@ -58,11 +73,13 @@ void CAgent::setPos(sf::RenderTarget* target)
 
 }
 
+sf::Vector2i CAgent::getPos()
+{
+	return sf::Vector2i(this->position_x, this->position_y);
+}
+
 CAgent::CAgent(sf::RenderTarget* target)
 {
-	
-
-	
 	this->setDir();
 	this->setSize(7);
 	this->setSpeed(rand()%10+5);
@@ -72,6 +89,7 @@ CAgent::CAgent(sf::RenderTarget* target)
 
 CAgent::~CAgent()
 {
+	
 }
 
 void CAgent::move(sf::RenderTarget* target)

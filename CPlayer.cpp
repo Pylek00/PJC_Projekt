@@ -1,5 +1,5 @@
 #include "CPlayer.h"
-
+#include "Game.h"
 
 
 void CPlayer::setSpeed(float Speed)
@@ -44,7 +44,6 @@ void CPlayer::setName(std::string Name)
 CPlayer::CPlayer(float Size, float Speed)
 {
 	
-	
 	this->setPos(400, 300);
 	this->setSize(Size);
 	this->setSpeed(Speed);
@@ -54,11 +53,36 @@ CPlayer::~CPlayer()
 {
 }
 
-void CPlayer::move()
+void CPlayer::move(sf::RenderTarget* target)
 {
+	this->vector = target->getSize();
 	//Keyboard input
-	if (sf::Keyboard::isKeyPressed(sf::Keyboard::Right)) { this->position_x += this->speed; }
-	else if (sf::Keyboard::isKeyPressed(sf::Keyboard::Left)) { this->position_x -= this->speed; }
-	if (sf::Keyboard::isKeyPressed(sf::Keyboard::Down)) { this->position_y += this->speed; }
-	else if (sf::Keyboard::isKeyPressed(sf::Keyboard::Up)) { this->position_y -= this->speed; }
+	if (sf::Keyboard::isKeyPressed(sf::Keyboard::Right)) {
+        this->position_x += this->speed;
+        if (this->position_x > this->vector.x - this->size)
+        {
+            this->position_x = this->vector.x - this->size;
+        }
+    }
+    else if (sf::Keyboard::isKeyPressed(sf::Keyboard::Left)) {
+        this->position_x -= this->speed;
+        if (this->position_x < this->size)
+        {
+            this->position_x = this->size;
+        }
+    }
+    if (sf::Keyboard::isKeyPressed(sf::Keyboard::Down)) {
+        this->position_y += this->speed;
+        if (this->position_y > this->vector.y - this->size)
+        {
+            this->position_y = this->vector.y - this->size;
+        }
+    }
+    else if (sf::Keyboard::isKeyPressed(sf::Keyboard::Up)) {
+        this->position_y -= this->speed;
+        if (this->position_y < this->size)
+        {
+            this->position_y = this->size;
+        }
+    }
 }

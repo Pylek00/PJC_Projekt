@@ -6,6 +6,7 @@ class CPlayer : public CMoving_object
 {
 public: 
 	std::string name;
+	sf::Vector2u vector;
 
 	void setName(std::string Name);
 
@@ -15,7 +16,7 @@ public:
 	CPlayer(float Size, float Speed);
 	~CPlayer();
 
-	void move();
+	void move(sf::RenderTarget* target);
 
 private:
 	void setSpeed(float Speed);

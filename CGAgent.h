@@ -14,7 +14,7 @@ public:
     CAgent* agent;
 
     CGAgent(CAgent* object);
-
+    ~CGAgent();
 
     void update(CAgent* object);
     void render(sf::RenderTarget* target);

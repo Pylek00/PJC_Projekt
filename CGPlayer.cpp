@@ -7,12 +7,18 @@ CGPlayer::CGPlayer(CPlayer* object)
 {
 	
 	this->shape.setFillColor(sf::Color::Blue);
-	this->shape.setRadius(object->size);
+	this->shape.setRadius(object->getSize());
 	this->shape.setPosition(object->position_x, object->position_y);
-	this->shape.setOrigin(sf::Vector2f(object->size, object->size));
+	this->shape.setOrigin(sf::Vector2f(object->getSize(), object->getSize()));
 	this->player = object;
 	
 }
+
+CGPlayer::~CGPlayer()
+{
+	
+}
+
 
 void CGPlayer::update_render(CPlayer* object, sf::RenderTarget *target)
 {

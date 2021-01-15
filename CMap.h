@@ -20,8 +20,6 @@ class CMap
 {
 
 public:
-	int height;
-	int width;
 
 	enum numObj { GRASS = 0, STONE, WATER };
 
@@ -42,6 +40,8 @@ public:
 
 
 private:
+	int height;
+	int width;
 protected:
 
 };

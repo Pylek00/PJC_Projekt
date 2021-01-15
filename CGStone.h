@@ -9,6 +9,7 @@ public:
     CStone* stone;
 
     CGStone(CStone* stone);
+    ~CGStone();
 
     void render(RenderTarget* target);
 

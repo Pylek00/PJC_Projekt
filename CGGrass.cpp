@@ -3,11 +3,16 @@
 CGGrass::CGGrass(CGrass* grass)
 {
 	this->grass = grass;
-	this->texture.loadFromFile("Textures/grass2.jpg", sf::IntRect(10,10,this->grass->size,this->grass->size));	
+	this->texture.loadFromFile("Textures/grass2.jpg", sf::IntRect(10,10,this->grass->getSize(),this->grass->getSize()));
 	this->sprite.setOrigin(32, 32);
 	this->sprite.setTexture(this->texture);
 	this->sprite.setPosition(this->grass->position_x, this->grass->position_y);
 	
+}
+
+CGGrass::~CGGrass()
+{
+	delete grass;
 }
 
 void CGGrass::render(RenderTarget* target)

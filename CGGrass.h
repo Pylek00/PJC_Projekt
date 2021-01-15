@@ -10,6 +10,8 @@ public:
 
     CGGrass(CGrass* grass);
 
+    ~CGGrass();
+
     void render(RenderTarget* target);
 
 

@@ -36,16 +36,9 @@
 class Game
 {
 private:
-	class Settings
-	{
+	
+private:
 
-
-
-
-
-
-	};
-public:
 	//Variables
 
 	sf::Window* wind;
@@ -66,6 +59,7 @@ public:
 	
 	CPlayer* player;
 	CGPlayer* gplayer;
+	CMoving_object* m_object;
 	CMap* map;
 
 
@@ -96,8 +90,8 @@ public:
 
 	//Constructor/Disctructor
 	
-	Game();
-	virtual ~Game();
+	
+	
 
 	//Functions
 
@@ -119,6 +113,10 @@ public:
 	void updatePlayerMove();
 	void update();
 	void render();
+
+public:
+	Game();
+	virtual ~Game();
 	void run();
 
 };

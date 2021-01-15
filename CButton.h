@@ -8,9 +8,6 @@ class CButton
 {
 private:
 
-	
-
-	sf::RectangleShape shape;
 	sf::Font* font;
 	
 
@@ -31,16 +28,15 @@ public:
 	~CButton();
 
 
-	sf::Text text;
-
-
 	//FUNCTIONS
 	void update(const sf::Vector2f mousePos);
 	void render(sf::RenderTarget* target);
 	bool isPressed();
 
 
-
+private:
+	sf::Text text;
+	sf::RectangleShape shape;
 
 };
 
