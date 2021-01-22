@@ -6,7 +6,7 @@ CGGrass::CGGrass(CGrass* grass)
 	this->texture.loadFromFile("Textures/grass2.jpg", sf::IntRect(10,10,this->grass->getSize(),this->grass->getSize()));
 	this->sprite.setOrigin(32, 32);
 	this->sprite.setTexture(this->texture);
-	this->sprite.setPosition(this->grass->position_x, this->grass->position_y);
+	this->sprite.setPosition(this->grass->getPosition().x, this->grass->getPosition().y);
 	
 }
 

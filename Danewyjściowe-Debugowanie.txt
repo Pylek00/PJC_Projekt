@@ -1,0 +1,87 @@
+﻿„SFML-MT1.exe” (Win32): załadowano „E:\C++ Projekty\stare\Angry_Agents\bin\Debug-x64\SFML-MT1.exe”. Symbole zostały załadowane.
+„SFML-MT1.exe” (Win32): załadowano „C:\Windows\System32\ntdll.dll”. 
+„SFML-MT1.exe” (Win32): załadowano „C:\Windows\System32\kernel32.dll”. 
+„SFML-MT1.exe” (Win32): załadowano „C:\Windows\System32\KernelBase.dll”. 
+„SFML-MT1.exe” (Win32): załadowano „C:\Windows\System32\gdi32.dll”. 
+„SFML-MT1.exe” (Win32): załadowano „C:\Windows\System32\win32u.dll”. 
+„SFML-MT1.exe” (Win32): załadowano „C:\Windows\System32\gdi32full.dll”. 
+„SFML-MT1.exe” (Win32): załadowano „C:\Windows\System32\msvcp_win.dll”. 
+„SFML-MT1.exe” (Win32): załadowano „C:\Windows\System32\ucrtbase.dll”. 
+„SFML-MT1.exe” (Win32): załadowano „C:\Windows\System32\user32.dll”. 
+„SFML-MT1.exe” (Win32): załadowano „C:\Windows\System32\advapi32.dll”. 
+„SFML-MT1.exe” (Win32): załadowano „C:\Windows\System32\msvcrt.dll”. 
+„SFML-MT1.exe” (Win32): załadowano „C:\Windows\System32\sechost.dll”. 
+„SFML-MT1.exe” (Win32): załadowano „C:\Windows\System32\rpcrt4.dll”. 
+„SFML-MT1.exe” (Win32): załadowano „C:\Windows\System32\opengl32.dll”. 
+„SFML-MT1.exe” (Win32): załadowano „C:\Windows\System32\combase.dll”. 
+„SFML-MT1.exe” (Win32): załadowano „C:\Windows\System32\bcryptprimitives.dll”. 
+„SFML-MT1.exe” (Win32): załadowano „C:\Windows\System32\winmm.dll”. 
+„SFML-MT1.exe” (Win32): załadowano „C:\Windows\System32\glu32.dll”. 
+„SFML-MT1.exe” (Win32): załadowano „C:\Windows\System32\winmmbase.dll”. 
+„SFML-MT1.exe” (Win32): załadowano „C:\Windows\System32\cfgmgr32.dll”. 
+„SFML-MT1.exe” (Win32): załadowano „C:\Windows\System32\DXCore.dll”. 
+„SFML-MT1.exe” (Win32): załadowano „C:\Windows\System32\imm32.dll”. 
+Wątek 0x5864 zakończył działanie z kodem 0 (0x0).
+„SFML-MT1.exe” (Win32): załadowano „C:\Windows\System32\uxtheme.dll”. 
+„SFML-MT1.exe” (Win32): załadowano „C:\Windows\System32\msctf.dll”. 
+„SFML-MT1.exe” (Win32): załadowano „C:\Windows\System32\oleaut32.dll”. 
+„SFML-MT1.exe” (Win32): załadowano „C:\Windows\System32\windows.storage.dll”. 
+„SFML-MT1.exe” (Win32): załadowano „C:\Windows\System32\SHCore.dll”. 
+„SFML-MT1.exe” (Win32): załadowano „C:\Windows\System32\profapi.dll”. 
+„SFML-MT1.exe” (Win32): załadowano „C:\Windows\System32\powrprof.dll”. 
+„SFML-MT1.exe” (Win32): załadowano „C:\Windows\System32\umpdc.dll”. 
+„SFML-MT1.exe” (Win32): załadowano „C:\Windows\System32\shlwapi.dll”. 
+„SFML-MT1.exe” (Win32): załadowano „C:\Windows\System32\kernel.appcore.dll”. 
+„SFML-MT1.exe” (Win32): załadowano „C:\Windows\System32\DriverStore\FileRepository\nvmi.inf_amd64_9cd951c47b0da577\nvdlistx.dll”. 
+„SFML-MT1.exe” (Win32): załadowano „C:\Windows\System32\version.dll”. 
+„SFML-MT1.exe” (Win32): załadowano „C:\Windows\System32\DriverStore\FileRepository\igdlh64.inf_amd64_24de78387e6208e4\ig9icd64.dll”. 
+„SFML-MT1.exe” (Win32): załadowano „C:\Windows\System32\shell32.dll”. 
+„SFML-MT1.exe” (Win32): załadowano „C:\Windows\System32\cryptsp.dll”. 
+„SFML-MT1.exe” (Win32): załadowano „C:\Windows\System32\dwmapi.dll”. 
+„SFML-MT1.exe” (Win32): załadowano „C:\Windows\System32\dxgi.dll”. 
+„SFML-MT1.exe” (Win32): załadowano „C:\Windows\System32\ResourcePolicyClient.dll”. 
+„SFML-MT1.exe” (Win32): zwolniono „C:\Windows\System32\ResourcePolicyClient.dll”
+„SFML-MT1.exe” (Win32): zwolniono „C:\Windows\System32\version.dll”
+„SFML-MT1.exe” (Win32): zwolniono „C:\Windows\System32\DriverStore\FileRepository\nvmi.inf_amd64_9cd951c47b0da577\nvdlistx.dll”
+Wątek 0x4ee4 zakończył działanie z kodem 0 (0x0).
+„SFML-MT1.exe” (Win32): załadowano „C:\Windows\System32\DriverStore\FileRepository\nvmi.inf_amd64_9cd951c47b0da577\nvdlistx.dll”. 
+„SFML-MT1.exe” (Win32): załadowano „C:\Windows\System32\version.dll”. 
+„SFML-MT1.exe” (Win32): załadowano „C:\Windows\System32\DriverStore\FileRepository\igdlh64.inf_amd64_24de78387e6208e4\igdgmm64.dll”. 
+„SFML-MT1.exe” (Win32): zwolniono „C:\Windows\System32\version.dll”
+„SFML-MT1.exe” (Win32): zwolniono „C:\Windows\System32\DriverStore\FileRepository\nvmi.inf_amd64_9cd951c47b0da577\nvdlistx.dll”
+Wątek 0x56e4 zakończył działanie z kodem 0 (0x0).
+„SFML-MT1.exe” (Win32): załadowano „C:\Windows\System32\DriverStore\FileRepository\igdlh64.inf_amd64_24de78387e6208e4\igc64.dll”. 
+„SFML-MT1.exe” (Win32): załadowano „C:\Windows\System32\dinput8.dll”. 
+„SFML-MT1.exe” (Win32): załadowano „C:\Windows\System32\InputHost.dll”. 
+„SFML-MT1.exe” (Win32): załadowano „C:\Windows\System32\propsys.dll”. 
+„SFML-MT1.exe” (Win32): załadowano „C:\Windows\System32\CoreUIComponents.dll”. 
+„SFML-MT1.exe” (Win32): załadowano „C:\Windows\System32\CoreMessaging.dll”. 
+„SFML-MT1.exe” (Win32): załadowano „C:\Windows\System32\WinTypes.dll”. 
+„SFML-MT1.exe” (Win32): załadowano „C:\Windows\System32\ntmarta.dll”. 
+„SFML-MT1.exe” (Win32): załadowano „C:\Windows\System32\hid.dll”. 
+„SFML-MT1.exe” (Win32): załadowano „C:\Windows\System32\setupapi.dll”. 
+„SFML-MT1.exe” (Win32): załadowano „C:\Windows\System32\bcrypt.dll”. 
+„SFML-MT1.exe” (Win32): załadowano „C:\Windows\System32\devobj.dll”. 
+„SFML-MT1.exe” (Win32): załadowano „C:\Windows\System32\wintrust.dll”. 
+„SFML-MT1.exe” (Win32): załadowano „C:\Windows\System32\msasn1.dll”. 
+„SFML-MT1.exe” (Win32): załadowano „C:\Windows\System32\crypt32.dll”. 
+„SFML-MT1.exe” (Win32): załadowano „C:\Windows\System32\TextInputFramework.dll”. 
+„SFML-MT1.exe” (Win32): załadowano „C:\Windows\System32\iertutil.dll”. 
+„SFML-MT1.exe” (Win32): załadowano „C:\Windows\System32\ole32.dll”. 
+„SFML-MT1.exe” (Win32): zwolniono „C:\Windows\System32\devobj.dll”
+„SFML-MT1.exe” (Win32): zwolniono „C:\Windows\System32\msasn1.dll”
+„SFML-MT1.exe” (Win32): zwolniono „C:\Windows\System32\crypt32.dll”
+„SFML-MT1.exe” (Win32): zwolniono „C:\Windows\System32\wintrust.dll”
+„SFML-MT1.exe” (Win32): zwolniono „C:\Windows\System32\setupapi.dll”
+„SFML-MT1.exe” (Win32): zwolniono „C:\Windows\System32\hid.dll”
+„SFML-MT1.exe” (Win32): zwolniono „C:\Windows\System32\dinput8.dll”
+Wątek 0x4d18 zakończył działanie z kodem 0 (0x0).
+Wątek 0x5564 zakończył działanie z kodem 0 (0x0).
+Wątek 0x2f38 zakończył działanie z kodem 0 (0x0).
+Wątek 0x1b8c zakończył działanie z kodem 0 (0x0).
+Wątek 0x4ec0 zakończył działanie z kodem 0 (0x0).
+Wątek 0x61f0 zakończył działanie z kodem 0 (0x0).
+Wątek 0xebc zakończył działanie z kodem 0 (0x0).
+Wątek 0x2bec zakończył działanie z kodem 0 (0x0).
+Wątek 0x4398 zakończył działanie z kodem 0 (0x0).
+Program „[9096] SFML-MT1.exe” zakończył działanie z kodem 0 (0x0).

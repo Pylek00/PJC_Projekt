@@ -18,7 +18,7 @@ void CPlayer::setSize(float Size)
 		this->size = 10;
 }
 
-void CPlayer::setPos(float x, float y)
+void CPlayer::setStartPos(float x, float y)
 {
 	if (x > 0 && y > 0)
 	{
@@ -44,7 +44,7 @@ void CPlayer::setName(std::string Name)
 CPlayer::CPlayer(float Size, float Speed)
 {
 	
-	this->setPos(400, 300);
+	this->setStartPos(400, 300);
 	this->setSize(Size);
 	this->setSpeed(Speed);
 }

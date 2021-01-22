@@ -4,10 +4,19 @@ class CStone :
     public CObject
 {
 public:
-    bool can_step;
+    
+    /**
+    * @brief Konstruktor
+    * @param x Wspolrzedna x
+    * @param y Wspolrzedna y
+    * @param size Rozmiar
+    */
     CStone(float x, float y, float size);
 
 private:
+
+    bool can_step;
+
 protected:
 
 

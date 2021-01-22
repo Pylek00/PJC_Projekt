@@ -15,6 +15,3 @@ void CGObject::draw(sf::RenderTarget* target)
 }
 
 
-
-
-

@@ -2,7 +2,17 @@
 
 
 
-CButton::CButton(float x, float y, float width, float height, 
+int CButton::getButtonState()
+{
+	return this->buttonState;
+}
+
+void CButton::setButtonState(int bState)
+{
+	this->buttonState = bState;
+}
+
+CButton::CButton(float x, float y, float width, float height,
 	sf::Font* font, std::string text, 
 	sf::Color idleColor, sf::Color hoverColor, sf::Color activeColor)
 {

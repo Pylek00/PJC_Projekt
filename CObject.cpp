@@ -1,5 +1,16 @@
 #include "CObject.h"
 
+void CObject::setPosition(float x, float y)
+{
+	this->position_x = x;
+	this->position_y = y;
+}
+
+sf::Vector2f CObject::getPosition()
+{
+	return sf::Vector2f(this->position_x,this->position_y);
+}
+
 float CObject::getSize()
 {
 	return this->size;

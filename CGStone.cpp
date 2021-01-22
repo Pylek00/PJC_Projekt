@@ -6,7 +6,7 @@ CGStone::CGStone(CStone* stone)
 	this->texture.loadFromFile("Textures/rocks.png", sf::IntRect(10, 10, this->stone->getSize(), this->stone->getSize()));
 	this->sprite.setOrigin(32, 32);
 	this->sprite.setTexture(this->texture);
-	this->sprite.setPosition(this->stone->position_x, this->stone->position_y);
+	this->sprite.setPosition(this->stone->getPosition().x, this->stone->getPosition().y);
 }
 
 CGStone::~CGStone()

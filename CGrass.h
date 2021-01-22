@@ -5,10 +5,13 @@ class CGrass :
     public CObject
 {
 public:
-    bool can_step;
+    /**
+     * @brief Konstruktor
+     */
     CGrass(float x, float y,float size);
 
 private:
+    bool can_step;
 protected:
 
 };

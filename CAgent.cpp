@@ -73,9 +73,9 @@ void CAgent::setPos(sf::RenderTarget* target)
 
 }
 
-sf::Vector2i CAgent::getPos()
+sf::Vector2f CAgent::getPos()
 {
-	return sf::Vector2i(this->position_x, this->position_y);
+	return sf::Vector2f(this->position_x, this->position_y);
 }
 
 CAgent::CAgent(sf::RenderTarget* target)
@@ -94,7 +94,7 @@ CAgent::~CAgent()
 
 void CAgent::move(sf::RenderTarget* target)
 {
-	
+	this->vector = target->getSize();
 	switch (this->moveDir)
 	{
 	case N:  {this->position_y -= this->speed;                                  if (position_y < 0)              { this->moveDir = S; }                                                         break; }
@@ -115,7 +115,7 @@ void CAgent::move(sf::RenderTarget* target)
 bool CAgent::checkIfInRange(CPlayer* player)
 {
 	float distance;
-	distance = sqrt(pow(player->position_x - this->position_x,2) + pow(player->position_y - this->position_y,2));
+	distance = sqrt(pow(player->getPosition().x - this->getPosition().x,2) + pow(player->getPosition().y - this->getPosition().y,2));
 	if (distance < this->seeRange)
 	{
 		return true;

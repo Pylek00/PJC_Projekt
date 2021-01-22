@@ -23,25 +23,38 @@ public:
 
 	enum numObj { GRASS = 0, STONE, WATER };
 
+	/**
+	* @brief Konstruktor
+	*/
+	CMap();
+	/**
+	* @brief Destruktor
+	*/
+	~CMap();
+	/**
+	* @brief Metoda tworzaca losowa mape
+	*/
+	void createRandomMap();
+	/**
+	* @brief Metoda renderujaca mape
+	* @param target Wskaznik do okna gry
+	*/
+	void render(RenderTarget* target);
+
+
+private:
+
+	int height;
+	int width;
 	std::vector<CGObject*>  map_g;
 	std::vector<CObject*>  map_o;
 
 	CGrass* pomGrass;
 	CStone* pomStone;
-	
+
 	CGObject* pomGObj;
 	numObj typ;
 
-	CMap();
-	~CMap();
-
-	void createRandomMap();
-	void render(RenderTarget* target);
-
-
-private:
-	int height;
-	int width;
 protected:
 
 };

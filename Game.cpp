@@ -120,10 +120,14 @@ void Game::renderLoadingScreen()
 void Game::updateAgents()
 {
     //update and move every agent
+
+    
     for (int k = 0; k < agents_g.size(); k++)
     {
-        this->agents_o[k]->move(this->window);
-        this->agents_g[k]->update(this->agents_o[k]);
+        if (!sf::Keyboard::isKeyPressed(sf::Keyboard::Space)){
+            this->agents_o[k]->move(this->window);
+            this->agents_g[k]->update(this->agents_o[k]);
+        }
     }
     //adds new agent
     if (this->time > this->addAgentTime)
@@ -200,9 +204,6 @@ void Game::updateMousePos()
 void Game::updatePlayerMove()
 {
     this->m_object->move(this->window);
-
-      
-    
 }
 
 void Game::update()
@@ -241,7 +242,7 @@ void Game::render()
         this->window->getDefaultView();
         
         this->view.setSize(sf::Vector2f(900.0f, 450.0f));
-        this->view.setCenter(this->player->position_x, this->player->position_y);
+        this->view.setCenter(this->player->getPosition().x, this->player->getPosition().y);
 
         this->map->render(this->window);
         this->gplayer->update_render(this->player, window);
@@ -260,7 +261,7 @@ void Game::render()
 
 void Game::run()
 {
-
+    this->pause = 0;
     /*while (true)
     {
         dtFrameTime();
@@ -311,8 +312,8 @@ void Game::run()
             {
                 this->gameWindowState = PLAY_GAME;
             }
-            mainmenu.exitGameBTN->buttonState = 0;
-            mainmenu.startGameBTN->buttonState = 0;
+            mainmenu.exitGameBTN->setButtonState(0);
+            mainmenu.startGameBTN->setButtonState(0);
 
             break;
         case EXIT:
@@ -344,8 +345,7 @@ void Game::run()
            //create player
             CPlayer player1(5.f, 15.f);
 
-            player1.position_x = window_bounds.width / 2;
-            player1.position_y = window_bounds.height / 2;
+            player1.setPosition(window_bounds.width / 2, window_bounds.height / 2);
 
             this->player = &player1;
             CGPlayer gPlayer(this->player);
